@@ -29,7 +29,6 @@ public class AuthFacade implements IAuthFacade {
     public User getUser() {
         User user = (User) this.request.getAttribute("user");
         if (user == null) {
-            System.out.println("tttt");
             var username = SecurityContextHolder.getContext().getAuthentication().getName();
             user = this.userRepository.findByUsername(username);
             this.setUser(this.userRepository.findByUsername(username));

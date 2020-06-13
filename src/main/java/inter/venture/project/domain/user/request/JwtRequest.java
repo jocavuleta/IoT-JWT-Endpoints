@@ -1,12 +1,10 @@
 package inter.venture.project.domain.user.request;
 
-import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 
 public class JwtRequest {
 
     @NotBlank
-//    @Email
     private String username;
 
     @NotBlank

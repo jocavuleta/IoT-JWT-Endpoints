@@ -7,6 +7,8 @@ import inter.venture.project.domain.user.request.CreateUserRequest;
 import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.CascadeType;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import inter.venture.project.domain.user.service.UserService;
@@ -22,6 +24,14 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+
+    @Value("${message:Hello default}")
+    private String message;
+
+    @RequestMapping("/message")
+    String getMessage() {
+        return this.message;
+    }
 
 
     @GetMapping

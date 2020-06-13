@@ -35,7 +35,6 @@ public class DeviceService {
 
 
 
-
     public List<Device> list(){
         return deviceRepository.findAll();
     }

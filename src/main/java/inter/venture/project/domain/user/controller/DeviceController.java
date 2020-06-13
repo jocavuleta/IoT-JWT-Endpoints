@@ -34,7 +34,6 @@ public class DeviceController {
     }
 
 
-    //TODO
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public DeviceDto create(@RequestBody @Valid CreateDeviceRequest createDeviceRequest, @RequestHeader(name="Authorization") String token) throws ValidationException {
@@ -67,11 +66,6 @@ public class DeviceController {
         if (device == null){
             device = DeviceMapper.instance.deviceToDeviceDto(this.deviceService.findByDescription(search));
         }
-//        if(id == null){
-//            device = DeviceMapper.instance.deviceToDeviceDto(this.deviceService.findByName(name));
-//        }else{
-//            device = DeviceMapper.instance.deviceToDeviceDto(this.deviceService.get(id));
-//        }
         return device;
     }
 }
