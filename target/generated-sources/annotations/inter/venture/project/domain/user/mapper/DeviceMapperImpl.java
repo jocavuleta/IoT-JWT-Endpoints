@@ -8,7 +8,7 @@ import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2020-06-13T13:13:53+0200",
+    date = "2020-06-13T16:58:14+0200",
     comments = "version: 1.3.0.Final, compiler: javac, environment: Java 13 (Oracle Corporation)"
 )
 public class DeviceMapperImpl implements DeviceMapper {
