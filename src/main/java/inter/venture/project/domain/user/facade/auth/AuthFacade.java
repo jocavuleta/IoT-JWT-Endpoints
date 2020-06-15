@@ -20,7 +20,7 @@ public class AuthFacade implements IAuthFacade {
     public Long getId() {
         return this.getUser().getId();
     }
-
+    
     public void setUser(User user) {
         request.setAttribute("user", user);
     }

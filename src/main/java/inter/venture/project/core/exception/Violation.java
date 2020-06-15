@@ -1,6 +1,6 @@
 package inter.venture.project.core.exception;
 
-public class Violation {
+public class Violation extends Throwable {
 
     private final String fieldName;
 

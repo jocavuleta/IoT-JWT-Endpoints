@@ -26,6 +26,8 @@ public class JwtRequestFilter extends OncePerRequestFilter {
     @Autowired
     private JwtTokenUtil jwtTokenUtil;
 
+    //Filter that is intercepting every http request and extracting the token from the header
+    //And checking for a valid user with required token
     @Override
     protected void doFilterInternal(HttpServletRequest request,
                                     HttpServletResponse response,

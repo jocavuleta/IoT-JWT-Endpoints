@@ -1,17 +1,15 @@
 package inter.venture.project.domain.user.controller;
 
-import inter.venture.project.domain.user.dto.UserDto;
+import inter.venture.project.domain.user.dto.publicDto.UserDto;
+import inter.venture.project.domain.user.dto.privateDto.UserDtoPrivate;
 import inter.venture.project.domain.user.entity.User;
-import inter.venture.project.domain.user.mapper.UserMapper;
-import inter.venture.project.domain.user.request.CreateUserRequest;
+import inter.venture.project.domain.user.service.UserService;
 import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.CascadeType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-import inter.venture.project.domain.user.service.UserService;
 
 import javax.validation.Valid;
 import javax.xml.bind.ValidationException;
@@ -25,51 +23,36 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @Value("${message:Hello default}")
-    private String message;
-
-    @RequestMapping("/message")
-    String getMessage() {
-        return this.message;
-    }
-
 
     @GetMapping
     public List<UserDto> list(){
-        return UserMapper.instance.listOfUsersToListOfUserDto(this.userService.list());
+        return this.userService.list();
     }
 
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public UserDto create(@RequestBody @Valid CreateUserRequest createUserRequest) throws ValidationException {
-        return UserMapper.instance.userToUserDto(this.userService.create(createUserRequest));
+    public UserDto create(@RequestBody @Valid UserDtoPrivate userDto) throws ValidationException {
+        return this.userService.create(userDto);
     }
 
-//    @GetMapping(value = "/get")
-    @RequestMapping("/get/id={id}")
+    @GetMapping("/get/{id}")
     public UserDto get(@PathVariable(name = "id") Long id) {
-        return UserMapper.instance.userToUserDto(this.userService.get(id));
+        return this.userService.get(id);
     }
 
-//    @PutMapping(value = "{id}")
-    @RequestMapping(value = "/update/id={id}", method = RequestMethod.PUT)
-    public UserDto update(@PathVariable Long id, @RequestBody User user) {
-        return UserMapper.instance.userToUserDto(this.userService.update(id, user));
+    @PutMapping(value = "/update/{id}")
+    public UserDto update(@PathVariable Long id, @RequestBody UserDtoPrivate user) {
+        return this.userService.update(id, user);
     }
 
 
-    @RequestMapping(value = "/delete/id={id}", method = RequestMethod.DELETE)
+    //All children all deleted as well
+    @DeleteMapping(value = "/delete/{id}")
     @Cascade(CascadeType.ALL)
-    public void delete(@PathVariable Long id) {
+    public String delete(@PathVariable Long id) {
         this.userService.delete(id);
+        return "User Deleted!";
     }
-
-
-
-
-
-
-
 
 }

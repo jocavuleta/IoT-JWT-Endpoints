@@ -4,6 +4,7 @@ import javax.validation.constraints.NotBlank;
 
 public class JwtRequest {
 
+    //Initial request from the user with the given credentials
     @NotBlank
     private String username;
 

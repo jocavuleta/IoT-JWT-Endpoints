@@ -1,6 +1,7 @@
 package inter.venture.project.domain.user.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import inter.venture.project.core.validation.constraints.UniqueField;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -29,8 +30,8 @@ public class User {
 
     @OneToMany(
             mappedBy = "creator",
-            cascade = CascadeType.PERSIST,
-            fetch = FetchType.LAZY
+            orphanRemoval = true,
+            cascade = CascadeType.ALL
     )
     @Transient
     @JsonIgnore

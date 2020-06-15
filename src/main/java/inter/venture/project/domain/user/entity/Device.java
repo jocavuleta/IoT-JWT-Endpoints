@@ -10,10 +10,15 @@ public class Device {
     private long id;
     @Column(name = "name", nullable = false)
     private String name;
+
     @Column(name = "description", nullable = true)
     private String description;
+
     @Column(name = "secret", nullable = true)
     private String secret;
+
+    @Column(name = "properties")
+    private String properties;
 
     @ManyToOne(cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
     @JoinColumn(name = "creator", referencedColumnName = "id")
@@ -35,6 +40,13 @@ public class Device {
         setCreator(creator);
     }
 
+    public Device(String name, String description, String secret, String properties, User creator) {
+        this.name = name;
+        this.description = description;
+        this.secret = secret;
+        this.properties = properties;
+        this.creator = creator;
+    }
 
     public long getId() {
         return id;
@@ -74,5 +86,13 @@ public class Device {
 
     public void setCreator(User creator) {
         this.creator = creator;
+    }
+
+    public String getProperties() {
+        return properties;
+    }
+
+    public void setProperties(String properties) {
+        this.properties = properties;
     }
 }

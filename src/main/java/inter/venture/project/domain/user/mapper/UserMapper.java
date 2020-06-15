@@ -1,6 +1,7 @@
 package inter.venture.project.domain.user.mapper;
 
-import inter.venture.project.domain.user.dto.UserDto;
+import inter.venture.project.domain.user.dto.publicDto.UserDto;
+import inter.venture.project.domain.user.dto.privateDto.UserDtoPrivate;
 import inter.venture.project.domain.user.entity.User;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
@@ -14,5 +15,9 @@ public interface UserMapper {
 
     UserDto userToUserDto(User user);
 
+    User userDtoToUser(UserDto userDto);
+
     List<UserDto> listOfUsersToListOfUserDto(List<User> user);
+
+    User userDtoPrivateToUser(UserDtoPrivate userDto);
 }

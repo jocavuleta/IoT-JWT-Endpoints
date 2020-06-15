@@ -12,6 +12,36 @@
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="venturedb@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="venturedb@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="venturedb@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="venturedb: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -34,6 +64,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -46,7 +77,92 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="inter.venture.project" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.DeviceUnitRestTest.updateDevice">
+    <configuration name="DeviceUnitRestTest.getDevice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InterVentureProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="inter.venture.unit.rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="inter.venture.unit.rest" />
+      <option name="MAIN_CLASS_NAME" value="inter.venture.unit.rest.DeviceUnitRestTest" />
+      <option name="METHOD_NAME" value="getDevice" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeviceUnitRestTest.getUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InterVentureProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="inter.venture.unit.rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="inter.venture.unit.rest" />
+      <option name="MAIN_CLASS_NAME" value="inter.venture.unit.rest.DeviceUnitRestTest" />
+      <option name="METHOD_NAME" value="getUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeviceUnitRestTest.updateDevice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InterVentureProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="inter.venture.unit.rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="inter.venture.unit.rest" />
+      <option name="MAIN_CLASS_NAME" value="inter.venture.unit.rest.DeviceUnitRestTest" />
+      <option name="METHOD_NAME" value="updateDevice" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRestTest.getUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InterVentureProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="inter.venture.integration.rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="inter.venture.integration.rest" />
+      <option name="MAIN_CLASS_NAME" value="inter.venture.integration.rest.UserRestTest" />
+      <option name="METHOD_NAME" value="getUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRestUnitTest.getUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InterVentureProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="inter.venture.unit.rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="inter.venture.unit.rest" />
+      <option name="MAIN_CLASS_NAME" value="inter.venture.unit.rest.UserRestUnitTest" />
+      <option name="METHOD_NAME" value="getUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="InterVentureProject" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="InterVentureProject" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="inter.venture.project.InterVentureProject" />
@@ -55,12 +171,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DeviceUnitRestTest.updateDevice" />
+        <item itemvalue="JUnit.UserRestTest.getUser" />
+        <item itemvalue="JUnit.DeviceUnitRestTest.getDevice" />
+        <item itemvalue="JUnit.DeviceUnitRestTest.getUser" />
+        <item itemvalue="JUnit.UserRestUnitTest.getUser" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
     <option name="projectSyncType">
       <map>
         <entry key="$USER_HOME$/IdeaProjects/akka-quickstart-scala" value="PREVIEW" />
       </map>
+    </option>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
     </option>
   </component>
   <component name="SvnConfiguration">
@@ -81,7 +218,11 @@
       <workItem from="1591985618851" duration="9835000" />
       <workItem from="1592046301488" duration="424000" />
       <workItem from="1592046806146" duration="3951000" />
-      <workItem from="1592051009913" duration="8303000" />
+      <workItem from="1592051009913" duration="37686000" />
+      <workItem from="1592166625309" duration="8691000" />
+      <workItem from="1592209960101" duration="1167000" />
+      <workItem from="1592211304285" duration="5603000" />
+      <workItem from="1592217342069" duration="7799000" />
     </task>
     <servers />
   </component>
@@ -94,46 +235,58 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592046399959">
+    <state x="440" y="202" key="#Assign_Data_Sources" timestamp="1592132317749">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592046399959" />
-    <state x="653" y="227" key="#com.intellij.ide.util.MemberChooser" timestamp="1592038479708">
+    <state x="440" y="202" key="#Assign_Data_Sources/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592132317749" />
+    <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592157717152">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="653" y="227" key="#com.intellij.ide.util.MemberChooser/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592038479708" />
-    <state width="1638" height="280" key="GridCell.Tab.0.bottom" timestamp="1592063681426">
+    <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592157717152" />
+    <state x="100" y="123" width="1480" height="827" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1592133969982">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="280" key="GridCell.Tab.0.bottom/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592063681426" />
-    <state width="1638" height="280" key="GridCell.Tab.0.center" timestamp="1592063681425">
+    <state x="100" y="123" width="1480" height="827" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592133969982" />
+    <state x="653" y="227" key="#com.intellij.ide.util.MemberChooser" timestamp="1592169347489">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="280" key="GridCell.Tab.0.center/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592063681425" />
-    <state width="1638" height="280" key="GridCell.Tab.0.left" timestamp="1592063681425">
+    <state x="653" y="227" key="#com.intellij.ide.util.MemberChooser/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592169347489" />
+    <state x="606" y="403" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1592150713497">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="280" key="GridCell.Tab.0.left/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592063681425" />
-    <state width="1638" height="280" key="GridCell.Tab.0.right" timestamp="1592063681426">
+    <state x="606" y="403" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592150713497" />
+    <state width="1638" height="278" key="GridCell.Tab.0.bottom" timestamp="1592224401518">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="280" key="GridCell.Tab.0.right/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592063681426" />
-    <state width="1638" height="280" key="GridCell.Tab.1.bottom" timestamp="1592063681427">
+    <state width="1638" height="278" key="GridCell.Tab.0.bottom/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592224401518" />
+    <state width="1638" height="278" key="GridCell.Tab.0.center" timestamp="1592224401518">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="280" key="GridCell.Tab.1.bottom/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592063681427" />
-    <state width="1638" height="280" key="GridCell.Tab.1.center" timestamp="1592063681427">
+    <state width="1638" height="278" key="GridCell.Tab.0.center/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592224401518" />
+    <state width="1638" height="278" key="GridCell.Tab.0.left" timestamp="1592224401517">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="280" key="GridCell.Tab.1.center/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592063681427" />
-    <state width="1638" height="280" key="GridCell.Tab.1.left" timestamp="1592063681426">
+    <state width="1638" height="278" key="GridCell.Tab.0.left/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592224401517" />
+    <state width="1638" height="278" key="GridCell.Tab.0.right" timestamp="1592224401518">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="280" key="GridCell.Tab.1.left/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592063681426" />
-    <state width="1638" height="280" key="GridCell.Tab.1.right" timestamp="1592063681427">
+    <state width="1638" height="278" key="GridCell.Tab.0.right/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592224401518" />
+    <state width="1638" height="278" key="GridCell.Tab.1.bottom" timestamp="1592224401519">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="280" key="GridCell.Tab.1.right/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592063681427" />
+    <state width="1638" height="278" key="GridCell.Tab.1.bottom/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592224401519" />
+    <state width="1638" height="278" key="GridCell.Tab.1.center" timestamp="1592224401519">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="278" key="GridCell.Tab.1.center/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592224401519" />
+    <state width="1638" height="278" key="GridCell.Tab.1.left" timestamp="1592224401519">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="278" key="GridCell.Tab.1.left/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592224401519" />
+    <state width="1638" height="278" key="GridCell.Tab.1.right" timestamp="1592224401519">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="278" key="GridCell.Tab.1.right/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592224401519" />
     <state x="378" y="198" key="Maven.ArtifactSearchDialog" timestamp="1592045090673">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -142,14 +295,22 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="341" y="175" key="SettingsEditor/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592048525317" />
-    <state x="421" y="261" width="837" height="550" key="find.popup" timestamp="1592047518101">
+    <state x="706" y="420" width="350" height="232" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1592157744668">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="421" y="261" width="837" height="550" key="find.popup/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592047518101" />
-    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1592046977885">
+    <state x="706" y="420" width="350" height="232" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592157744668" />
+    <state x="421" y="261" width="837" height="550" key="find.popup" timestamp="1592220158306">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592046977885" />
+    <state x="421" y="261" width="837" height="550" key="find.popup/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592220158306" />
+    <state x="505" y="248" key="run.anything.popup" timestamp="1592152529505">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="505" y="248" key="run.anything.popup/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592152529505" />
+    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1592219481916">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592219481916" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -171,12 +332,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/inter/venture/project/domain/user/service/UserService.java</url>
-          <line>30</line>
+          <line>37</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/inter/venture/project/domain/user/controller/UserController.java</url>
-          <line>43</line>
+          <line>33</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -195,59 +356,67 @@
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/inter/venture/project/domain/user/controller/UserController.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/inter/venture/project/domain/user/controller/UserController.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/inter/venture/project/domain/user/service/UserService.java</url>
-          <line>51</line>
+          <line>61</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/inter/venture/project/domain/user/filter/JwtRequestFilter.java</url>
-          <line>33</line>
+          <line>35</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/inter/venture/project/domain/user/filter/JwtRequestFilter.java</url>
-          <line>44</line>
+          <line>46</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/inter/venture/project/domain/user/controller/DeviceController.java</url>
-          <line>39</line>
+          <line>43</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/inter/venture/project/domain/user/service/DeviceService.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/inter/venture/project/domain/user/service/DeviceService.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/inter/venture/project/domain/user/controller/DeviceController.java</url>
-          <line>32</line>
+          <line>36</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/inter/venture/project/domain/user/service/DeviceService.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="24" />
+          <url>file://$PROJECT_DIR$/src/test/java/inter/venture/integration/rest/UserRestTest.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/inter/venture/project/core/validation/UniqueFieldValidator.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/inter/venture/project/domain/user/controller/DeviceController.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/inter/venture/project/domain/user/service/DeviceService.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="25" />
+          <line>69</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/inter/venture/project/domain/user/service/UserService.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/inter/venture/project/domain/user/service/UserService.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/inter/venture/project/domain/user/controller/UserController.java</url>
+          <line>27</line>
+          <properties class="inter.venture.project.domain.user.controller.UserController" method="list">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="42" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
