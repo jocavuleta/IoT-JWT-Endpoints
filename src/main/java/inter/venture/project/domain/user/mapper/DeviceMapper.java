@@ -22,17 +22,20 @@ public interface DeviceMapper {
 
     Device deviceDtoPrivateToDevice(DeviceDtoPrivate deviceDtoPrivate);
 
+    DeviceDtoPrivate deviceToDeviceDtoPrivate(Device device);
+
     List<DeviceDto> listOfDevicesToListOfDeviceDto(List<Device> devices);
 
     default String propertiesMapToPropertiesString(Map<String, Object> properties) {
-        return properties.keySet().stream()
+        return properties!=null? properties.keySet().stream()
                 .map(key -> key + ":" + properties.get(key))
-                .collect(Collectors.joining(", ", "", ""));
+                .collect(Collectors.joining(", ", "", "")): null;
     }
 
     default Map<String, Object> propertiesStringToPropertiesMap(String properties) {
-        return Arrays.stream(properties.split(","))
-                .map(entry -> entry.trim().split(":"))
-                .collect(Collectors.toMap(entry -> entry[0], entry -> entry[1]));
+        return properties!=null?
+                Arrays.stream(properties.split(","))
+                        .map(entry -> entry.trim().split(":"))
+                        .collect(Collectors.toMap(entry -> entry[0], entry -> entry[1])): null;
     }
 }

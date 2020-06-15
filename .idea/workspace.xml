@@ -82,8 +82,8 @@
       <recent name="inter.venture.project" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DeviceUnitRestTest.updateDevice">
-    <configuration name="DeviceUnitRestTest.getDevice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.InterVentureProject">
+    <configuration name="DeviceUnitRestTest.deleteDevice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="InterVentureProject" />
       <extension name="coverage">
         <pattern>
@@ -93,23 +93,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="inter.venture.unit.rest" />
       <option name="MAIN_CLASS_NAME" value="inter.venture.unit.rest.DeviceUnitRestTest" />
-      <option name="METHOD_NAME" value="getDevice" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DeviceUnitRestTest.getUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="InterVentureProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="inter.venture.unit.rest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="inter.venture.unit.rest" />
-      <option name="MAIN_CLASS_NAME" value="inter.venture.unit.rest.DeviceUnitRestTest" />
-      <option name="METHOD_NAME" value="getUser" />
+      <option name="METHOD_NAME" value="deleteDevice" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -131,7 +115,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserRestTest.getUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="inter.venture in InterVentureProject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InterVentureProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="inter.venture.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="inter.venture" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="inter.venture.integration.rest in InterVentureProject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="InterVentureProject" />
       <extension name="coverage">
         <pattern>
@@ -140,14 +138,12 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="inter.venture.integration.rest" />
-      <option name="MAIN_CLASS_NAME" value="inter.venture.integration.rest.UserRestTest" />
-      <option name="METHOD_NAME" value="getUser" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserRestUnitTest.getUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="inter.venture.unit.rest in InterVentureProject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="InterVentureProject" />
       <extension name="coverage">
         <pattern>
@@ -156,9 +152,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="inter.venture.unit.rest" />
-      <option name="MAIN_CLASS_NAME" value="inter.venture.unit.rest.UserRestUnitTest" />
-      <option name="METHOD_NAME" value="getUser" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -173,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.inter.venture in InterVentureProject" />
+        <item itemvalue="JUnit.DeviceUnitRestTest.deleteDevice" />
+        <item itemvalue="JUnit.inter.venture.integration.rest in InterVentureProject" />
+        <item itemvalue="JUnit.inter.venture.unit.rest in InterVentureProject" />
         <item itemvalue="JUnit.DeviceUnitRestTest.updateDevice" />
-        <item itemvalue="JUnit.UserRestTest.getUser" />
-        <item itemvalue="JUnit.DeviceUnitRestTest.getDevice" />
-        <item itemvalue="JUnit.DeviceUnitRestTest.getUser" />
-        <item itemvalue="JUnit.UserRestUnitTest.getUser" />
       </list>
     </recent_temporary>
   </component>
@@ -222,7 +216,8 @@
       <workItem from="1592166625309" duration="8691000" />
       <workItem from="1592209960101" duration="1167000" />
       <workItem from="1592211304285" duration="5603000" />
-      <workItem from="1592217342069" duration="7799000" />
+      <workItem from="1592217342069" duration="9302000" />
+      <workItem from="1592251986176" duration="3676000" />
     </task>
     <servers />
   </component>
@@ -255,38 +250,38 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="606" y="403" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592150713497" />
-    <state width="1638" height="278" key="GridCell.Tab.0.bottom" timestamp="1592224401518">
+    <state width="1638" height="278" key="GridCell.Tab.0.bottom" timestamp="1592255530205">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="278" key="GridCell.Tab.0.bottom/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592224401518" />
-    <state width="1638" height="278" key="GridCell.Tab.0.center" timestamp="1592224401518">
+    <state width="1638" height="278" key="GridCell.Tab.0.bottom/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592255530205" />
+    <state width="1638" height="278" key="GridCell.Tab.0.center" timestamp="1592255530204">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="278" key="GridCell.Tab.0.center/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592224401518" />
-    <state width="1638" height="278" key="GridCell.Tab.0.left" timestamp="1592224401517">
+    <state width="1638" height="278" key="GridCell.Tab.0.center/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592255530204" />
+    <state width="1638" height="278" key="GridCell.Tab.0.left" timestamp="1592255530203">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="278" key="GridCell.Tab.0.left/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592224401517" />
-    <state width="1638" height="278" key="GridCell.Tab.0.right" timestamp="1592224401518">
+    <state width="1638" height="278" key="GridCell.Tab.0.left/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592255530203" />
+    <state width="1638" height="278" key="GridCell.Tab.0.right" timestamp="1592255530205">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="278" key="GridCell.Tab.0.right/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592224401518" />
-    <state width="1638" height="278" key="GridCell.Tab.1.bottom" timestamp="1592224401519">
+    <state width="1638" height="278" key="GridCell.Tab.0.right/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592255530205" />
+    <state width="1638" height="278" key="GridCell.Tab.1.bottom" timestamp="1592255530207">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="278" key="GridCell.Tab.1.bottom/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592224401519" />
-    <state width="1638" height="278" key="GridCell.Tab.1.center" timestamp="1592224401519">
+    <state width="1638" height="278" key="GridCell.Tab.1.bottom/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592255530207" />
+    <state width="1638" height="278" key="GridCell.Tab.1.center" timestamp="1592255530206">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="278" key="GridCell.Tab.1.center/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592224401519" />
-    <state width="1638" height="278" key="GridCell.Tab.1.left" timestamp="1592224401519">
+    <state width="1638" height="278" key="GridCell.Tab.1.center/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592255530206" />
+    <state width="1638" height="278" key="GridCell.Tab.1.left" timestamp="1592255530206">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="278" key="GridCell.Tab.1.left/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592224401519" />
-    <state width="1638" height="278" key="GridCell.Tab.1.right" timestamp="1592224401519">
+    <state width="1638" height="278" key="GridCell.Tab.1.left/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592255530206" />
+    <state width="1638" height="278" key="GridCell.Tab.1.right" timestamp="1592255530207">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="278" key="GridCell.Tab.1.right/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592224401519" />
+    <state width="1638" height="278" key="GridCell.Tab.1.right/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592255530207" />
     <state x="378" y="198" key="Maven.ArtifactSearchDialog" timestamp="1592045090673">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -307,38 +302,18 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="505" y="248" key="run.anything.popup/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592152529505" />
-    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1592219481916">
+    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1592254309097">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592219481916" />
+    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027/-1920.23.1920.1057@0.23.1680.1027" timestamp="1592254309097" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/inter/venture/project/domain/user/controller/AuthController.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/inter/venture/project/domain/user/JwtAuthenticationEntryPoint.java</url>
           <line>15</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/inter/venture/project/domain/user/service/JwtUserDetailsService.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/inter/venture/project/domain/user/service/UserService.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/inter/venture/project/domain/user/controller/UserController.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/inter/venture/project/config/WebSecurityConfig.java</url>
@@ -346,39 +321,9 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/inter/venture/project/domain/user/service/JwtUserDetailsService.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/inter/venture/project/domain/user/facade/auth/AuthFacade.java</url>
           <line>29</line>
           <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/inter/venture/project/domain/user/service/UserService.java</url>
-          <line>61</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/inter/venture/project/domain/user/filter/JwtRequestFilter.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/inter/venture/project/domain/user/filter/JwtRequestFilter.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/inter/venture/project/domain/user/controller/DeviceController.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/inter/venture/project/domain/user/controller/DeviceController.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/inter/venture/integration/rest/UserRestTest.java</url>
@@ -391,32 +336,9 @@
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/inter/venture/project/domain/user/controller/DeviceController.java</url>
-          <line>53</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/inter/venture/project/domain/user/service/DeviceService.java</url>
-          <line>69</line>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/inter/venture/project/domain/user/service/UserService.java</url>
-          <line>53</line>
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/inter/venture/project/domain/user/service/UserService.java</url>
           <line>68</line>
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/inter/venture/project/domain/user/controller/UserController.java</url>
-          <line>27</line>
-          <properties class="inter.venture.project.domain.user.controller.UserController" method="list">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="42" />
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

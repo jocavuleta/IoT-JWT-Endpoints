@@ -57,9 +57,11 @@ public class DeviceController {
 
     @DeleteMapping(value = "/delete/{id}")
     @Cascade(CascadeType.ALL)
-    public String delete(@PathVariable Long id) {
-        this.deviceService.delete(id);
-        return "Device Deleted!";
+    public String delete(@PathVariable Long id) throws Violation {
+        if(this.deviceService.delete(id)){
+            return "Device Deleted!";
+        }
+        throw new Violation("id", "No such device id!");
     }
 
     @GetMapping(value = "/{search}")

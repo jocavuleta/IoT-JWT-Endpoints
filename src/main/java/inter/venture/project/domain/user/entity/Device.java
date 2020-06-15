@@ -20,7 +20,7 @@ public class Device {
     @Column(name = "properties")
     private String properties;
 
-    @ManyToOne(cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
+    @ManyToOne
     @JoinColumn(name = "creator", referencedColumnName = "id")
     private User creator;
 

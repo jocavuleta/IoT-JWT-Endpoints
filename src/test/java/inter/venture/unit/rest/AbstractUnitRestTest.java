@@ -1,5 +1,6 @@
 package inter.venture.unit.rest;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import inter.venture.project.InterVentureProject;
 import org.junit.Before;
 import org.junit.runner.RunWith;
@@ -15,6 +16,9 @@ import org.springframework.web.context.WebApplicationContext;
 public abstract class AbstractUnitRestTest {
 
     MockMvc mockMvc;
+
+    @Autowired
+    ObjectMapper objectMapper;
 
     @Autowired
     private WebApplicationContext context;

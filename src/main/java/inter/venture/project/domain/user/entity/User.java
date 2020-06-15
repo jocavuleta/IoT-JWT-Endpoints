@@ -31,7 +31,7 @@ public class User {
     @OneToMany(
             mappedBy = "creator",
             orphanRemoval = true,
-            cascade = CascadeType.ALL
+            cascade = CascadeType.MERGE
     )
     @Transient
     @JsonIgnore

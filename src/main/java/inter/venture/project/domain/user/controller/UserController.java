@@ -1,13 +1,12 @@
 package inter.venture.project.domain.user.controller;
 
-import inter.venture.project.domain.user.dto.publicDto.UserDto;
+import inter.venture.project.core.exception.Violation;
 import inter.venture.project.domain.user.dto.privateDto.UserDtoPrivate;
-import inter.venture.project.domain.user.entity.User;
+import inter.venture.project.domain.user.dto.publicDto.UserDto;
 import inter.venture.project.domain.user.service.UserService;
 import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.CascadeType;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -50,9 +49,11 @@ public class UserController {
     //All children all deleted as well
     @DeleteMapping(value = "/delete/{id}")
     @Cascade(CascadeType.ALL)
-    public String delete(@PathVariable Long id) {
-        this.userService.delete(id);
-        return "User Deleted!";
+    public String delete(@PathVariable Long id) throws Violation {
+        if(this.userService.delete(id)){
+            return "User Deleted!";
+        }
+        throw new Violation("id", "No such user id!");
     }
 
 }

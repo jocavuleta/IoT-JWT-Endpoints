@@ -2,8 +2,8 @@ package inter.venture.project.domain.user.service;
 
 import inter.venture.project.core.exception.Violation;
 import inter.venture.project.domain.user.JwtTokenUtil;
-import inter.venture.project.domain.user.dto.publicDto.DeviceDto;
 import inter.venture.project.domain.user.dto.privateDto.DeviceDtoPrivate;
+import inter.venture.project.domain.user.dto.publicDto.DeviceDto;
 import inter.venture.project.domain.user.entity.Device;
 import inter.venture.project.domain.user.entity.User;
 import inter.venture.project.domain.user.mapper.DeviceMapper;
@@ -11,7 +11,6 @@ import inter.venture.project.domain.user.repository.DeviceRepository;
 import inter.venture.project.domain.user.repository.UserRepository;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.NoHandlerFoundException;
 
@@ -68,13 +67,11 @@ public class DeviceService {
 
     public DeviceDto update(Long id, DeviceDtoPrivate deviceDtoPrivate) throws NoHandlerFoundException, Violation {
         Device device = DeviceMapper.instance.deviceDtoPrivateToDevice(deviceDtoPrivate);
-//        DeviceDto existingDevice = get(id);
-//        Device deviceExisting = DeviceMapper.instance.deviceDtoToDevice(existingDevice);
 
-//        Device deviceExisting = deviceRepository.getOne(id);
         if(deviceRepository.findById(id).isPresent()) {
             Device deviceExisting = deviceRepository.findById(id).get();
 
+            //Existing values for a device
             String name = deviceExisting.getName();
             String description = deviceExisting.getDescription();
             String secret = deviceExisting.getSecret();
@@ -86,6 +83,8 @@ public class DeviceService {
             BeanUtils.copyProperties(device, deviceExisting, "id");
             deviceExisting.setCreator(creator);
 
+            //If values were not given in the body then
+            //Take the old values and set them
             if (device.getName() == null) {
                 deviceExisting.setName(name);
             }
@@ -99,17 +98,20 @@ public class DeviceService {
                 deviceExisting.setProperties(properties);
             }
             return DeviceMapper.instance.deviceToDeviceDto(deviceRepository.saveAndFlush(deviceExisting));
-        }else{
-//            throw  new NoHandlerFoundException("No mentioned ID in the Database", "/update/id", HttpHeaders.EMPTY);
-            throw new Violation("id", "No given ID found in db");
         }
+        //If not present throw exception
+        throw new Violation("id", "No given ID found in db");
     }
 
 
 
-    public void delete(Long id) {
+    public boolean delete(Long id) {
         //Also need to check for children record before deleting
-        deviceRepository.deleteById(id);
+        if(deviceRepository.findById(id).isPresent()){
+            deviceRepository.deleteById(id);
+            return true;
+        }
+        return false;
     }
 
     public DeviceDto findByName(String name) {

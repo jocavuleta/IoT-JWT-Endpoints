@@ -1,7 +1,7 @@
 package inter.venture.project.core.validation;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import inter.venture.project.core.validation.constraints.UniqueField;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;

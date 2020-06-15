@@ -11,7 +11,7 @@ import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2020-06-15T12:14:34+0200",
+    date = "2020-06-15T22:15:25+0200",
     comments = "version: 1.3.0.Final, compiler: javac, environment: Java 13 (Oracle Corporation)"
 )
 public class DeviceMapperImpl implements DeviceMapper {
@@ -63,6 +63,23 @@ public class DeviceMapperImpl implements DeviceMapper {
         device.setProperties( propertiesMapToPropertiesString( deviceDtoPrivate.getProperties() ) );
 
         return device;
+    }
+
+    @Override
+    public DeviceDtoPrivate deviceToDeviceDtoPrivate(Device device) {
+        if ( device == null ) {
+            return null;
+        }
+
+        DeviceDtoPrivate deviceDtoPrivate = new DeviceDtoPrivate();
+
+        deviceDtoPrivate.setName( device.getName() );
+        deviceDtoPrivate.setDescription( device.getDescription() );
+        deviceDtoPrivate.setCreator( userToUserDto( device.getCreator() ) );
+        deviceDtoPrivate.setProperties( propertiesStringToPropertiesMap( device.getProperties() ) );
+        deviceDtoPrivate.setSecret( device.getSecret() );
+
+        return deviceDtoPrivate;
     }
 
     @Override

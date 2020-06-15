@@ -1,7 +1,7 @@
 package inter.venture.project.domain.user.service;
 
-import inter.venture.project.domain.user.dto.publicDto.UserDto;
 import inter.venture.project.domain.user.dto.privateDto.UserDtoPrivate;
+import inter.venture.project.domain.user.dto.publicDto.UserDto;
 import inter.venture.project.domain.user.entity.Device;
 import inter.venture.project.domain.user.entity.User;
 import inter.venture.project.domain.user.mapper.UserMapper;
@@ -64,7 +64,7 @@ public class UserService {
     }
 
 
-    public void delete(Long id) {
+    public boolean delete(Long id) {
         //Also need to check for children record before deleting
         if(userRepository.findById(id).isPresent()) {
             User user = userRepository.findById(id).get();
@@ -77,7 +77,9 @@ public class UserService {
                 }
             }
             userRepository.deleteById(id);
+            return true;
         }
+        return false;
     }
 
 
