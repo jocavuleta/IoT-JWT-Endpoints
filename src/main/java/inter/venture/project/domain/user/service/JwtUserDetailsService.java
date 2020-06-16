@@ -1,6 +1,6 @@
 package inter.venture.project.domain.user.service;
 
-import inter.venture.project.domain.user.JwtTokenUtil;
+import inter.venture.project.domain.user.jwt.JwtTokenUtil;
 import inter.venture.project.domain.user.entity.User;
 import inter.venture.project.domain.user.facade.auth.IAuthFacade;
 import inter.venture.project.domain.user.repository.UserRepository;

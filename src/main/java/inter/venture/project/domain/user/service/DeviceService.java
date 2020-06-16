@@ -1,7 +1,7 @@
 package inter.venture.project.domain.user.service;
 
 import inter.venture.project.core.exception.Violation;
-import inter.venture.project.domain.user.JwtTokenUtil;
+import inter.venture.project.domain.user.jwt.JwtTokenUtil;
 import inter.venture.project.domain.user.dto.privateDto.DeviceDtoPrivate;
 import inter.venture.project.domain.user.dto.publicDto.DeviceDto;
 import inter.venture.project.domain.user.entity.Device;

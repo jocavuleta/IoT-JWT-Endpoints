@@ -1,4 +1,4 @@
-package inter.venture.project.domain.user;
+package inter.venture.project.domain.user.jwt;
 
 
 import io.jsonwebtoken.Claims;
